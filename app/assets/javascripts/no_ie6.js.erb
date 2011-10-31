@@ -35,7 +35,7 @@ function showWarning() {
 
 	var i;
 	for (i = 0; i < browsers.length; i += 1) {
-		middle += "<div style='padding:0;margin:5px;float:left;display:inline;background: url(<%= image_path('background_browser.gif') %>) no-repeat scroll left top; width: 120px; height: 122px;'><a target='_blank' href='" + browsers[i].url + "' style='padding:0;margin:4px 10px;display:block;width:100px;height:96px;background:transparent url(" + browsers[i].image + ");'></a><div style='text-align:center;font-size:12px;line-height:12px;margin:0;padding:0'>" + browsers[i].name + "</div></div>";
+		middle += "<div style='padding:0;margin:5px;float:left;display:inline;background: url(<%= image_path('background_browser.gif') %>) no-repeat scroll left top; width: 120px; height: 122px;'><a href='" + browsers[i].url + "' style='padding:0;margin:4px 10px;display:block;width:100px;height:96px;background:transparent url(" + browsers[i].image + ");'></a><div style='text-align:center;font-size:12px;line-height:12px;margin:0;padding:0'>" + browsers[i].name + "</div></div>";
 	}
 
 	var post_template = "<div style = 'clear:both'></div></div></div>";
