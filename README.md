@@ -15,6 +15,10 @@ Call helper method from your page template (or application layout for every page
 
     <%= no_ie6_notice %>
 
+If you are using assets:precompile rake for your production environment, you should also add this line to your config/environments/production.rb:
+
+    config.assets.precompile += %w( no_ie6.js )
+
 Note
 -
 
